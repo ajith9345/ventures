@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+<!-- <link rel="stylesheet" href="{% static 'assets/css/contact.css' %}"> -->
+<link rel="stylesheet" href="{% static 'assets/css/vvv1.css' %}">
+
+
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Contact Form</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters mb-5">
+                            <div class="col-md-7">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3 class="mb-4">Contact Us</h3>
+                                    <div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-success" class="mb-4">
+                                        Your message was sent, thank you!
+                                    </div>
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="label" for="name">Full Name</label>
+                                                    <input type="text" class="form-control" name="fname" id="fname"
+                                                        placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="label" for="email">Email Address</label>
+                                                    <input type="email" class="form-control" name="contactEmail" id="contactEmail"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="label" for="subject">Subject</label>
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                        placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="label" for="#">Message</label>
+                                                    <textarea class="form-control" name="message" id="message" cols="30"
+                                                        rows="4" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="submit" value="Send Message" class="btn btn-primary">
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-stretch">
+                                <div id="map">
+                                    <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28883.429538871478!2d55.279616!3d25.188761599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1727194112672!5m2!1sen!2sae"
+                                    width="450" height="292" style="border:3px solid rgb(133, 67, 67);"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact row">
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><span>Address:AI_203 AI jazeera AI Hamra Rasal Khaimah -U.A.E </span> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><span>Phone:</span> <a href="tel://+9710529860385">+971 52 986 0385</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><span>Email:</span> <a
+                                                href="mailto:ajiajith442002@gmail.com"><span
+                                                    class="__cf_email__"
+                                                    data-cfemail="1c75727a735c6573696e6f756879327f7371">info@venturedps</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><span>Whatsapp</span> <a href="https://wa.me/+9710529860385">Click</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}

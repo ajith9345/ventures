@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'assets/css/about.css' %}">
+
+    <div class="hero-image">
+        <img src="{% static 'assets/images/about1.webp' %}" alt="Hero Image">
+    </div>
+<!-- .................................... -->
+    <section class="mission">
+        <h2 class="center-heading">Our Mission</h2>
+        <p>At venturesdps, our mission is simple yet profound: to alleviate the burden of paperwork and regulatory hurdles for businesses, enabling them to focus on what truly matters – their core operations and growth. We strive to be the cornerstone of efficiency and reliability in document clearing services, offering tailored solutions that meet the unique needs of each client.</p>
+    </section>
+
+    <section class="vision-expertise">
+        <div class="vision">
+            <img src="{% static 'assets/images/about2.webp' %}" alt="Vision Image" class="side-image">
+            <div class="text-content">
+                <h2>Our Vision</h2>
+                <p>At Venturesdps, our vision is to be the guiding light for individuals and families seeking to make life-changing moves across borders. We envision a world where migration is not merely a journey from one place to another, but a transformative experience that opens doors to new opportunities, enriches lives, and fosters greater understanding and unity among diverse cultures.</p>
+            </div>
+        </div>
+
+        <div class="expertise">
+            <div class="text-content">
+                <h2>Our Expertise</h2>
+                <p>Backed by years of experience and a team of seasoned professionals, we possess in-depth knowledge across various industries and regulatory frameworks. From visa and immigration documentation to trade licenses and permits, we have the expertise and resources to handle a diverse range of document clearing requirements with precision and proficiency.</p>
+            </div>
+            <img src="{% static 'assets/images/about3.webp' %}" alt="Expertise Image" class="side-image">
+        </div>
+    </section>
+
+
+    {% endblock %}

@@ -1,0 +1,296 @@
+/* General Styles */
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: montserrat
+} 
+/* Navbar Styles */
+.navbar { 
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    background-color:   rgb(5, 188, 255);
+    padding: 20px 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    z-index: 2;
+    
+}
+
+.logo { 
+    margin-right: auto; /* Pushes the logo to the left */
+    height: 60px;
+
+}
+
+.logo img {
+    height: 120px;
+    width: 300px;
+    
+}
+
+.toggle, .close {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: rgba(17, 16, 16, 0.986);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.986);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color:   rgb(58, 203, 255);
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: right 700px; ;
+    background-color:   rgb(5, 188, 255);
+    /* min-width: 160px; */
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 16px 1px;
+    font-size: 14px;
+    margin-left: 10px;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100px;
+    margin-right: 0px;
+    padding: 25px 3px;
+}
+/* Footer Styles */
+.footer {
+    background-color: white; /* White background */
+    width: 100%;
+    padding: 50px 0; /* Top and bottom padding */
+    text-align: center; /* Center the text */
+}
+
+.copyright {
+    text-decoration: underline; /* Underline the text */
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+}
+.toggle, .close {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: rgba(17, 16, 16, 0.986);
+    font-size: 24px;
+    cursor: pointer;
+}
+/* ............................................................ */
+.content {
+    background-color: white; /* Blue background */
+    color: white; /* Text color for readability */
+    /* padding: 50px; */
+    text-align: left; /* Center align content */
+    padding-top: 100px;
+    width: 100%;
+    
+}
+.content h1{
+    color: black;
+    padding-left: 70px;
+}
+.content hr{
+    width: 80%;
+    margin-top: 10px;
+    
+}
+
+.cover{
+    width: 94%;
+    display: flex;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+.cover1{
+    width: 94%;
+    display: flex;
+    padding-top:50px;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+
+/* ............2................... */
+.cover2{
+    width: 94%;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+/* ............3........... */
+.cover3{
+    width: 94%;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+.cover h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.cover1 h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.cover2 h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.cover3 h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.cover p{
+    padding-left: 20px;
+    
+}
+.cover1 p{
+    padding-left: 20px;
+    
+    
+}
+.cover2 p{
+    padding-left: 20px;
+}
+.cover3 p{
+    padding-left: 20px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+        display: none; /* Hide initially */
+        background-color:  #0824b1; /* Ensure background for dropdown */
+        position: absolute; /* Position it below the navbar */
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        z-index: 1;
+    }
+
+    .navbar.active .nav-links {
+        display: flex; /* Show when navbar is active */
+    }
+
+    .toggle {
+        display: block; /* Show toggle button */
+    }
+
+    .close {
+        display: block; /* Show close button when nav is active */
+        font-size: 45px; /* Adjust size */
+    }
+
+    .navbar.active .toggle {
+        display: none; /* Hide toggle when menu is open */
+    } 
+
+    .dropdown-content {
+        position: static; /* Reset position for mobile */
+    }
+    
+    .dropdown-content {
+        position: static;
+        background-color:   #0824b1;
+    }
+    /* Dropdown Styles */
+   .dropdown-content {
+    width: 80%;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+    width: 80%;
+    padding: 0px 0px;
+   }
+   .dropdown-content a {
+    padding: 5px 1px;
+    /* margin-left: 5px;  */
+    background-color:  #0824b1;
+   }
+    .toggle {
+        display: block; /* Show toggle button */
+    }
+
+    .close {
+        display: none; /* Hide close button initially */
+    }
+
+    .navbar.active .toggle {
+        display: none; /* Hide toggle when menu is open */
+    }
+
+    .navbar.active .close {
+        display: block; /* Show close button when menu is active */
+    }
+
+    .nav-links {
+        display: none; /* Hide initially */
+    }
+
+    .navbar.active .nav-links {
+        display: flex; /* Show when navbar is active */
+    }
+    .cover {
+        width:90% ;
+        font-size: 13px;
+    }
+    .cover1{
+        width:90% ;
+        font-size: 13px;
+
+    }
+    .cover2{
+        width:90% ;
+        font-size: 13px;
+
+    }
+    .cover3{
+        width:90% ;
+        font-size: 13px;
+
+    }
+    .footer {
+        background-color: white; /* White background */
+        width: 100%;
+        padding: 50px 0; /* Top and bottom padding */
+        text-align: center; /* Center the text */
+    }
+    
+    .copyright {
+        text-decoration: underline; /* Underline the text */
+        margin: 0; /* Remove default margin */
+        font-size: 13px; /* Adjust font size as needed */
+    }
+} 

@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'assets/css/ourpost.css' %}">
+
+<div>
+    
+    <div class="content">
+            <h2>Introducing venturesdocservicing.com: A Visual Journey Through Our World</h2>
+            <hr>
+    </div>
+    <div class="post-slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="{% static 'assets/images/p11.jpg' %}" alt="Post Image 1">
+            </div>
+            <div class="slide">
+                <img src="{% static 'assets/images/p12.jpg' %}" alt="Post Image 1">
+            </div>
+            <div class="slide">
+                <img src="{% static 'assets/images/p13.jpg' %}" alt="Post Image 1">
+            </div>
+        </div>
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
+        <button class="next" aria-label="Next slide">&#10095;</button>
+    </div>
+
+    <script src="{% static 'assets/js/ourpost.js' %}"></script>
+    
+{% endblock %}

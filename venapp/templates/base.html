@@ -1,0 +1,65 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/ventures.css' %}">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Welcome Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'assets/images/new logo.png' %}" alt="Logo">
+        </div>
+        <button class="toggle" aria-label="Toggle navigation">&#9776;</button>
+        <button class="close" aria-label="Close navigation">&times;</button>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT US</a></li>
+            <li><a href="{% url 'about' %}">ABOUT US</a></li>
+            <li><a href="{% url 'service' %}">OUR SERVICES</a></li>
+            <li><a href="{% url 'jobapp' %}">JOB APPLICATION</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">MORE</a>
+                <div class="dropdown-content">
+                    <a href="{% url 'secondcitizenship' %}">SECOND CITIZENSHIP</a>
+                    <a href="{% url 'uaesetup' %}">UAE BUSINESS SETUP</a>
+                    <a href="{% url 'ourothers' %}">OUR OTHER SERVICES</a>
+                    <a href="{% url 'ourpost' %}">OUR POSTS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+{% block content %}
+
+{% endblock %}
+
+ <!-- Facts End -->
+ <div class="text-footer">
+    <div class="footer">
+        <p class="copyright">Copyright © 2024 venturesdps.com - All Rights Reserved.</p>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="{% static 'assets/js/ventures.js' %}"></script>
+<!-- ...................... -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: montserrat
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    background-color:   rgb(5, 188, 255);
+    padding: 20px 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    z-index: 2;
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    height: 60px;
+
+}
+
+.logo img {
+    height: 120px;
+    width: 300px;
+    
+}
+
+.toggle, .close {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: rgba(17, 16, 16, 0.986);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.986);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color:   rgb(58, 203, 255);
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: right 700px; ;
+    background-color:    rgb(5, 188, 255);
+    /* min-width: 160px; */
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 16px 1px;
+    font-size: 14px;
+    margin-left: 10px;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100px;
+    margin-right: 0px;
+    padding: 25px 3px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: white; /* White background */
+    width: 100%;
+    padding: 50px 0; /* Top and bottom padding */
+    text-align: center; /* Center the text */
+}
+
+.copyright {
+    text-decoration: underline; /* Underline the text */
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+}
+.toggle, .close {
+    display: none; /* Hidden by default*/ 
+    background: none;
+    border: none;
+    color: rgba(17, 16, 16, 0.986);
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+/* Background Color */
+.content {
+    background-color: hsla(240, 72%, 24%, 0.678); /* Blue background */
+    color: white; /* Text color for readability */
+    padding: 50px;
+    text-align: center; /* Center align content */
+}
+.contents h1{ 
+    font-size: 3em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+
+    text-align: left;
+    height: 60px;
+    padding-top: 150px;
+    width: 700px;
+    padding-right: 120px;
+    padding-left: 50px;
+}
+.contents p{ 
+    font-size: 1.5em; /* Adjust the size as needed */
+    color: rgba(35, 32, 32, 0.8); /* Light white color */
+    width: 850px;
+    padding-top: 100px;
+    padding-right: 120px; 
+    padding-left: 50px;
+}
+.content h1{
+    font-size: 3em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: left;
+    height: 60px;
+    padding-top: 30px;
+    width: 600px;
+    padding-right: 120px;
+    
+}
+.content p{
+    color: rgba(255, 255, 255, 0.8); /* Light white color */
+    font-size: 1.5em; /* Optional: Adjust font size for readability */
+    margin-top: 10px; /* Space above the paragraph */
+    width: 750px;
+    padding-top: 50px;
+    text-align: left;
+    
+}
+/* canada section........................*/
+*{ 
+    margin: 0;
+    padding: 0;
+}
+.cover img,h1,h2,h3,h4{
+    padding-top: 50px;
+}
+.cover{
+    width: 100%;
+    height: 1600px;
+     background:#f3eded;
+    /* margin-top: 150px; */
+    display: flex;
+    
+}
+.box{
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+/*..............................................*/
+*{ 
+    margin: 0;
+    padding: 0;
+}
+.cover2{
+     /* background: #3333;  */
+    font-family: 'poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.cover2 img,h1,h2,h3,h4{
+    padding-top: 50px;
+}
+.cover2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.box1{
+    margin: 10px;
+    height: 300px;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ .boxer{
+    padding-top: 10px; 
+}
+.boxer1{
+    padding-top: 150px;
+}
+.boxer2{
+    padding-top: 180px;
+}
+/*3------------------------------------------------------*/
+.cover h4{
+    padding-top: 50px;
+}
+.cover3{
+    width: 100%;
+    height: 630px;
+     background: hsla(247, 77%, 15%, 0.678);
+    margin-top: 550px; 
+    display: flex;   
+}
+.box2{
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.boxer3{
+    padding-top: 80px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+        display: none; /* Hide initially */
+        background-color: rgb(8, 14, 203); /* Ensure background for dropdown */
+        position: absolute; /* Position it below the navbar */
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        z-index: 1;
+    }
+
+    .navbar.active .nav-links {
+        display: flex; /* Show when navbar is active */
+    }
+    .nav-links {
+        display: none; /* Hide initially */
+    }
+
+    .toggle {
+        display: block; /* Show toggle button */
+    }
+
+    .close {
+        display: block; /* Show close button when nav is active */
+        font-size: 45px; /* Adjust size */
+    }
+    .close {
+        display: none; /* Hide close button initially */
+    }
+
+    .navbar.active .toggle {
+        display: none; /* Hide toggle when menu is open */
+    } 
+    .navbar.active .close {
+        display: block; /* Show close button when menu is active */
+    }
+
+    .dropdown-content {
+        position: static; /* Reset position for mobile */
+    }
+    .dropdown-content {
+        position: static;
+        background-color:   rgb(8, 14, 203);
+    }
+    /* Dropdown Styles */
+   .dropdown-content {
+    width: 80%;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+    width: 80%;
+    padding: 0px 0px;
+   }
+   .dropdown-content a {
+    padding: 5px 1px;
+    /* margin-left: 5px;  */
+    background-color:  rgb(8, 14, 203);
+}
+    /* ----------- */
+    
+    /* Background Color */
+    .content {
+        background-color: hsla(240, 90%, 26%, 0.678); /* Blue background */
+        padding: 7px;
+        padding-right: 394px;
+        width: 82px;
+    }
+    .content h1{
+        color: white; /* Text color for readability */
+        padding: 7px;
+        width: 600px;
+        font-size: 20px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+
+    }
+    .content p{
+        padding: 8px;
+        padding-right: 395px;
+        width: 450px;
+        margin: 0px;
+        font-size: 16px;
+        padding-bottom: 30px;
+        padding-top: 0px;  
+
+    }
+    .contents h1 {
+        font-size: 20px;
+        width: 400px;
+        padding-left: 10px;
+    }
+    .contents p{
+        font-size: 18px;
+        width: 480px;
+        padding-left: 10px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        
+    }
+    /* .................. */
+    .cover h3{
+        padding-top: 50px;
+        width: 30px;
+        padding-bottom: 30px;
+    }
+    .cover h1{
+        font-size: 15px;
+        padding-left: 30px;
+    }
+    .cover img{
+        width: 80px;
+        height: 80px;
+        /* padding-right: 70px; */
+    }
+    .cover h4{
+        width: 100%;
+        font-size:15px ;
+        padding-bottom: 10px;
+
+    }
+    .cover p{
+        font-size:10px ;
+    }
+    .cover h2{
+        width: 80%;
+        
+    }
+    .cover{
+        width: 100%;
+        height: 1280px;
+        background:#fdfbfb;
+        display: flex;
+        
+    }
+    .boxer2 {
+        width: 70%;
+        display: flex;
+        padding-bottom:0;
+        padding-top: 0px;
+        font-size: 15px;
+    }
+    .boxer{
+        width: 70%;
+    }
+    .boxer1 {
+        width: 70%;
+        display: flex;
+        padding-bottom:0;
+        padding-top: 0px;
+        font-size: 15px;
+
+    }
+    .box{  
+        width: 600px;
+        height: 500px; 
+    }
+   .cover2 h4 {
+      font-size:12px;
+      padding-top: 0px;
+   }
+   .cover2 h2{
+     
+   }
+   .cover2 p {
+    font-size:12px;
+    width: 80%;
+   }
+   .cover2{
+       width: 100%;
+       height: 400px;
+       display: flex;
+   }
+   .cover3{
+    width: 100%;
+    height: 630px;
+    background: hsla(240, 90%, 26%, 0.678);
+    margin-top: 750px;  
+    display: flex;
+    
+   }
+   .box2{
+    margin: 10px;
+    width: 100%;
+    text-align: center; 
+    color: rgb(255, 251, 251);
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+   }
+
+   .boxer4 {
+    padding-top: 0px;
+   }
+   
+   .boxer3{
+    padding-top: 0px;
+   } 
+    body {
+    margin: 0;
+    font-family: montserrat
+    
+    }
+    .footer {
+    background-color: white; /* White background */
+    width: 100%;
+    padding: 50px 0; /* Top and bottom padding */
+    text-align: center; /* Center the text */
+    }
+
+    .copyright {
+    color: black;
+    text-decoration: underline; /* Underline the text */
+    margin: 0; /* Remove default margin */
+    font-size: 12px; /* Adjust font size as needed */
+    }
+
+}

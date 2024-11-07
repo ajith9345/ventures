@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<link rel="stylesheet" href="{% static 'assets/css/jobappli.css' %}">
+
+    <main class="center1">
+        <h1 class="h-bold">We Are Hiring!</h1>
+        <!-- <hr> -->
+        <h2 style="text-align: center;">JOIN OUR TEAM</h2>
+        <p style="text-align: center;" >If you're interested in one of our open positions, start by applying here and attaching your resume.</p>
+        
+        <h2 style="text-align: center;">Apply Now</h2>
+    
+        <form id="job-application" style="max-width: 600px; margin: 0 auto;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <label for="resume" class="resume-label">
+                <span class="pin-icon">📎</span> Attachment Resume
+            </label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required style="display: none;" onchange="updateResumeName()">
+            <div class="resume-box" onclick="document.getElementById('resume').click();">
+                <span id="resume-name">No file chosen</span>
+            </div>
+    
+            <p style="font-size: 0.8em; color: #555; text-align: center;">
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+            </p>
+    
+            <div class="button-container">
+                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer;">Submit Application</button>
+            </div>
+        </form>
+    </main>
+    
+    {% endblock %}
+   

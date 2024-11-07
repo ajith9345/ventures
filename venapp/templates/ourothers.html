@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<link rel="stylesheet" href="{% static 'assets/css/ourothers.css' %}">
+
+
+<div class="contents">
+    <div>
+        <div class="content">
+            <h1>Our other services</h1>
+            <span class="concept"><hr></span>
+            
+        </div>
+    </div>
+     <div class="cover" style="text-align: center;line-height: 50px;padding-top: 30px;">
+        <h2>
+             <li>UAE OUTBOUND VISA SERVICES</li>
+             <li>UAE INBOUND VISA SERVICES</li>
+             <li>CANADA VISA SERVICES</li>
+             <li>UNITED KINGDOM VISA SERVICES</li>
+             <li>SCHENGEN VISA</li>
+             <li>APPOINTMENT SCHEDULING</li>
+             <li>DOCUMENT ATTESTATION SERVICE</li>
+             <li>E-VISAS</li>
+             <li>TICKETING</li>
+             <li>COACHING & TRAINING PROVIDED</li>
+        </h2>
+     </div>
+      <!-- .................................... -->
+    
+    <div class="business-setup" id="business-setup">
+        <h1 style="color: white; text-align: center; text-decoration: underline;">SETUP YOUR BUSINESS IN UAE</h1>
+        <!-- Business sections go here... -->
+        <div class="business-section">
+            <div class="text-content">
+                <h2 style="color: white;text-align: center;">Dubai Mainland License</h2>
+                <p style="color: white;">
+                    Unlock the potential of your business in Dubai's vibrant mainland. Obtain your mainland license with
+                    ease and professionalism. Let us guide you through the process, ensuring compliance and efficiency
+                    every step of the way. Get started today and pave the way for your business success in one of the
+                    world's most dynamic markets.
+                </p>
+                <p style="color: white;">Migration Company | UAE Jobs | Jobs Abroad</p>
+            </div>
+            <img src="{% static 'assets/images/government of dubai.webp' %}" alt="Dubai Mainland License" class="right-image">
+        </div>
+
+        <div class="business-section">
+            <img src="{% static 'assets/images/sharjah.webp' %}" alt="Sharjah Media City" class="left-image">
+            <div class="text-content">
+                <h2 style="color: white;text-align: center;">Sharjah Media City</h2>
+                <p style="color: white;">
+                    Empower your creative vision with a Sharjah Media City (Shams) license. Join a thriving community of
+                    innovators, entrepreneurs, and content creators in the heart of Sharjah. Let us simplify the
+                    licensing process for you, so you can focus on what truly matters – bringing your ideas to life.
+                    Start your journey with Shams today and unlock endless possibilities in the world of media and
+                    innovation.
+                </p>
+                <p style="color: white;">Migration Company | UAE Jobs | Jobs Abroad</p>
+            </div>
+        </div>
+        <div class="business-section">
+            <div class="text-content">
+                <h2 style="color:white;text-align:center;">RAKEZ</h2>
+                <p style="color: white;">
+                    Transform your business dreams into reality with a RAKEZ license. Join the ranks of successful
+                    entrepreneurs in one of the UAE's premier economic zones. Our streamlined process and expert
+                    guidance ensure that your journey to obtaining a RAKEZ license is smooth and hassle-free. Step into
+                    a world of opportunities and growth with RAKEZ as your partner. Let's build your success story
+                    together.
+                </p>
+                <p style="color: white;">Migration Company | UAE Jobs | Jobs Abroad</p>
+            </div>
+            <img src="{% static 'assets/images/rakez.webp' %}" alt="RAKEZ" class="right-image">
+        </div>
+    
+
+        {% endblock %}
